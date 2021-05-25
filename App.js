@@ -20,13 +20,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import WordDefinition from './src/components/wordDef';
 
 import Api from './src/lib/api';
 import Helper from './src/lib/helper';
@@ -130,6 +124,7 @@ const App: () => React$Node = () => {
               color={'#219bd9'}
             />
           )}
+          <WordDefinition def={definition} />
         </ScrollView>
       </SafeAreaView>
     </>
